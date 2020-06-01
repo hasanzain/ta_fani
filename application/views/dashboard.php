@@ -95,14 +95,14 @@
                                 data.addColumn('string', 'nama');
                                 data.addColumn('number', 'xt');
                                 data.addColumn('number', 'yt');
-                                data.addColumn('string', 'pekerja');
+                                data.addColumn('string', 'status');
 
                                 jsonData.forEach(function(row) {
                                     data.addRow([
                                         row.nama + ' (' + row.status + ')',
                                         parseFloat(row.xt),
                                         parseFloat(row.yt),
-                                        row.pekerja
+                                        row.status
                                     ]);
                                 });
 
